@@ -1,1 +1,0 @@
-# Challenge Static websites
