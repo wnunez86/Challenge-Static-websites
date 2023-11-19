@@ -56,41 +56,48 @@
                 <div class="form-field-container">
                     <label for="studies"><span class="material-symbols-outlined">school</span>Studies</label>
                     <input name="studies" type="text" placeholder="Indicate studies"></input>
-                </div>
-                <div class="form-field-container">
+                  </div>
+                  <div class="form-field-container">
                     <label for="residence"><span class="material-symbols-outlined">location_on</span>Current residence</label>
                     <input name="residence" type="text" placeholder="Indicate current residence"></input>
                 </div>
-
+                
                 <div style="display: flex; margin: 10px 0px 10px auto; column-gap: 10px;">
-                <button style="background-color: transparent;">Cancel</button>
-                <button style="background-color: rgb(18, 145, 18);">Accept</button>
+                  <button style="background-color: transparent;">Cancel</button>
+                  <button style="background-color: rgb(18, 145, 18);">Accept</button>
                 </div>
-            </div>
-        </form>
-      </dialog>
-      <header>
-        <h2>Users</h2>
-        <div>
-          <button id = "new-user-btn"><span class="material-icons-round">add</span>New User</button>
-        </div>
-      </header>
-      <div id="users-list">
-        <!-- project card personal - user personal -->
-        <div class="user-card">
-          <div class="user-card-header">
-            <div class="foto_perfil">
-              <img  src="./assets/Foto_de_perfil.jpg">
-            </div>
+              </div>
+            </form>
+          </dialog>
+          <header>
+            <h2>Users</h2>
             <div>
-              <h5>Walter Nuñez Domingo</h5>
-              <p>BIM & LEAN Consulting</p>
+              <button id = "new-user-btn"><span class="material-icons-round">add</span>New User</button>
             </div>
-          </div>
-          <div class="user-card-content">
-            <div class="user-card-property">
-              <p style="color: #969696;">Email</p>
-              <p>wnunez@gmail.com</p>
+          </header>
+          <div id="users-list">
+            <!-- project card personal - user personal -->
+            <div class="user-card">
+              <div class="user-card-header">
+                <div class="user-card-header-interno">
+                  <div class="foto_perfil">
+                    <img  src="./assets/Foto_de_perfil.jpg">
+                  </div>
+                  <div>
+                    <h5>Walter Nuñez Domingo</h5>
+                    <p>BIM & LEAN Consulting</p>
+                  </div>
+
+                </div>
+                <div class="card-edit-button">
+                  <div class="edit-buttom"><span class="material-symbols-outlined">edit</span></div>
+                  <div class="delete-buttom"><span class="material-symbols-outlined">delete_forever</span></div>
+                </div>
+              </div>
+              <div class="user-card-content">
+                <div class="user-card-property">
+                  <p style="color: #969696;">Email</p>
+                  <p>wnunez@gmail.com</p>
             </div>
             <div class="user-card-property">
               <p style="color: #969696;">Birthdate</p>
@@ -111,10 +118,6 @@
             <div class="user-card-property">
               <p style="color: #969696;">Current residence</p>
               <p>Barcelona, Spain</p>
-            </div>
-            <div class="user-card-property card-edit-button">
-              <div class="edit-buttom"><span class="material-symbols-outlined">edit</span></div>
-              <div class="delete-buttom"><span class="material-symbols-outlined">delete_forever</span></div>
             </div>
           </div>
         </div>
