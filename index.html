@@ -20,83 +20,83 @@
     <div class="page" id="user-page" style="display: flex;">
       <dialog id="new-user-modal">
         <form id="new-user-form">
-            <h2>New User</h2>
-            <div class="input-list">
-                <div class="form-field-container">
-                    <label><span class="material-icons-round">person</span>Name and surname</label>
-                    <input name="name" type="text" autocomplete="off" placeholder="Indicate full name and surname" required="true">
-                    <p style="color: gray; font-size: var(--font-sm); margin-top: 5px; font-style: italic;">Required</p>
-                </div>
-                <div class="form-field-container">
-                    <label><span class="material-icons-round">subject</span>Current job position</label>
-                    <textarea name="description" cols="30" rows="2" placeholder="Provide a description of your current position"></textarea>
-                </div>
-                <div class="form-field-container">
-                    <label><span class="material-symbols-outlined">alternate_email</span>Email</label>
-                    <input name="email" type="email" placeholder="Indicate email" autocomplete="off">
-                </div>
-                <div class="form-field-container">
-                    <label for="birthdate"><span class="material-icons-round">calendar_month</span>Birthdate</label>
-                    <input name="birthdate" type="date"></input>
-                </div>
-                <div class="form-field-container">
-                    <label for="age"><span class="material-symbols-outlined">timer</span>Age</label>
-                    <input name="age" type="number" placeholder="Indicate age"></input>
-                </div>
-                <div class="form-field-container">
-                    <label><span class="material-symbols-outlined">public</span>Nationality</label>
-                    <select name="nationality">
-                        <option>Spanish</option>
-                        <option>Argentinian</option>
-                        <option>English</option>
-                        <option>South African</option>
-                        <option>Japanese</option>
-                    </select>
-                </div>
-                <div class="form-field-container">
-                    <label for="studies"><span class="material-symbols-outlined">school</span>Studies</label>
-                    <input name="studies" type="text" placeholder="Indicate studies"></input>
-                  </div>
-                  <div class="form-field-container">
-                    <label for="residence"><span class="material-symbols-outlined">location_on</span>Current residence</label>
-                    <input name="residence" type="text" placeholder="Indicate current residence"></input>
-                </div>
-                
-                <div style="display: flex; margin: 10px 0px 10px auto; column-gap: 10px;">
-                  <button style="background-color: transparent;">Cancel</button>
-                  <button style="background-color: rgb(18, 145, 18);">Accept</button>
-                </div>
-              </div>
-            </form>
-          </dialog>
-          <header>
-            <h2>Users</h2>
-            <div>
-              <button id = "new-user-btn"><span class="material-icons-round">add</span>New User</button>
+          <h2>New User</h2>
+          <div class="input-list">
+            <div class="form-field-container">
+              <label><span class="material-icons-round">person</span>Name and surname</label>
+              <input name="name" type="text" autocomplete="off" placeholder="Indicate full name and surname" required="true">
+              <p style="color: gray; font-size: var(--font-sm); margin-top: 5px; font-style: italic;">Required</p>
             </div>
-          </header>
-          <div id="users-list">
-            <!-- project card personal - user personal -->
-            <div class="user-card">
-              <div class="user-card-header">
-                <div class="user-card-header-interno">
-                  <div class="foto_perfil">
-                    <img  src="./assets/Foto_de_perfil.jpg">
-                  </div>
-                  <div>
-                    <h5>Walter Nuñez Domingo</h5>
-                    <p>BIM & LEAN Consulting</p>
-                  </div>
-                </div>
-                <div class="card-edit-button">
-                  <div class="edit-buttom"><span class="material-symbols-outlined">edit</span></div>
-                  <div class="delete-buttom"><span class="material-symbols-outlined">delete_forever</span></div>
-                </div>
+            <div class="form-field-container">
+              <label><span class="material-icons-round">subject</span>Current job position</label>
+              <textarea name="description" cols="30" rows="2" placeholder="Provide a description of your current position"></textarea>
+            </div>
+            <div class="form-field-container">
+              <label><span class="material-symbols-outlined">alternate_email</span>Email</label>
+              <input name="email" type="email" placeholder="Indicate email" autocomplete="off">
+            </div>
+            <div class="form-field-container">
+              <label for="birthdate"><span class="material-icons-round">calendar_month</span>Birthdate</label>
+              <input name="birthdate" type="date"></input>
+            </div>
+            <div class="form-field-container">
+              <label for="age"><span class="material-symbols-outlined">timer</span>Age</label>
+              <input name="age" type="number" placeholder="Indicate age"></input>
+            </div>
+            <div class="form-field-container">
+              <label><span class="material-symbols-outlined">public</span>Nationality</label>
+                <select name="nationality">
+                  <option>Spanish</option>
+                  <option>Argentinian</option>
+                  <option>English</option>
+                  <option>South African</option>
+                  <option>Japanese</option>
+                </select>
+            </div>
+            <div class="form-field-container">
+              <label for="studies"><span class="material-symbols-outlined">school</span>Studies</label>
+              <input name="studies" type="text" placeholder="Indicate studies"></input>
+            </div>
+            <div class="form-field-container">
+              <label for="residence"><span class="material-symbols-outlined">location_on</span>Current residence</label>
+              <input name="residence" type="text" placeholder="Indicate current residence"></input>
+            </div>
+                
+            <div style="display: flex; margin: 10px 0px 10px auto; column-gap: 10px;">
+              <button style="background-color: transparent;">Cancel</button>
+              <button style="background-color: rgb(18, 145, 18);">Accept</button>
+            </div>
+          </div>
+        </form>
+      </dialog>
+      <header>
+        <h2>Users</h2>
+        <div>
+          <button id = "new-user-btn"><span class="material-icons-round">add</span>New User</button>
+        </div>
+      </header>
+      <div id="users-list">
+        <!-- project card personal - user personal -->
+        <div class="user-card">
+          <div class="user-card-header">
+            <div class="user-card-header-interno">
+              <div class="foto_perfil">
+                <img  src="./assets/Foto_de_perfil.jpg">
               </div>
-              <div class="user-card-content">
-                <div class="user-card-property">
-                  <p style="color: #969696;">Email</p>
-                  <p>wnunez@gmail.com</p>
+              <div>
+                <h5>Walter Nuñez Domingo</h5>
+                <p>BIM & LEAN Consulting</p>
+              </div>
+            </div>
+            <div class="card-edit-button">
+              <div class="edit-buttom"><span class="material-symbols-outlined">edit</span></div>
+              <div class="delete-buttom"><span class="material-symbols-outlined">delete_forever</span></div>
+            </div>
+          </div>
+          <div class="user-card-content">
+            <div class="user-card-property">
+              <p style="color: #969696;">Email</p>
+              <p>wnunez@gmail.com</p>
             </div>
             <div class="user-card-property">
               <p style="color: #969696;">Birthdate</p>
@@ -118,8 +118,8 @@
               <p style="color: #969696;">Current residence</p>
               <p>Barcelona, Spain</p>
             </div>
-          </div>
-        </div>
+          </div>    
+        </div>  
         <!-- project card personal - user personal -->
         <div class="user-card">
           <div class="user-card-header">
@@ -163,10 +163,354 @@
               <p>Buenos Aires, Argentina</p>
             </div>
           </div>
-        </div>                                                            
-      </div>
-    </div>
+        </div> 
+        <div class="user-card">
+          <div class="user-card-header">
+            <div class="user-card-header-interno">
+              <div class="foto_perfil">
+                <img  src="./assets/FotoPerfil01.jpg">
+              </div>
+              <div>
+                <h5>Name and surname of users</h5>
+                <p>current job position</p>
+              </div>
+            </div>
+            <div class="card-edit-button">
+              <div class="edit-buttom"><span class="material-symbols-outlined">edit</span></div>
+              <div class="delete-buttom"><span class="material-symbols-outlined">delete_forever</span></div>
+            </div>
+          </div>
+          <div class="user-card-content">
+            <div class="user-card-property">
+              <p style="color: #969696;">Email</p>
+              <p>user@gmail.com</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Birthdate</p>
+              <p>01/01/1990</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Age</p>
+              <p>30 years</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Nationality</p>
+              <p>Argentina</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Studies</p>
+              <p>Software Developer</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Current residence</p>
+              <p>Buenos Aires, Argentina</p>
+            </div>
+          </div>
+        </div> 
+        <div class="user-card">
+          <div class="user-card-header">
+            <div class="user-card-header-interno">
+              <div class="foto_perfil">
+                <img  src="./assets/FotoPerfil02.jpg">
+              </div>
+              <div>
+                <h5>Name and surname of users</h5>
+                <p>current job position</p>
+              </div>
+            </div>
+            <div class="card-edit-button">
+              <div class="edit-buttom"><span class="material-symbols-outlined">edit</span></div>
+              <div class="delete-buttom"><span class="material-symbols-outlined">delete_forever</span></div>
+            </div>
+          </div>
+          <div class="user-card-content">
+            <div class="user-card-property">
+              <p style="color: #969696;">Email</p>
+              <p>user@gmail.com</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Birthdate</p>
+              <p>01/01/1990</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Age</p>
+              <p>30 years</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Nationality</p>
+              <p>Argentina</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Studies</p>
+              <p>Software Developer</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Current residence</p>
+              <p>Buenos Aires, Argentina</p>
+            </div>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-card-header">
+            <div class="user-card-header-interno">
+              <div class="foto_perfil">
+                <img  src="./assets/FotoPerfil03.jpg">
+              </div>
+              <div>
+                <h5>Name and surname of users</h5>
+                <p>current job position</p>
+              </div>
+            </div>
+            <div class="card-edit-button">
+              <div class="edit-buttom"><span class="material-symbols-outlined">edit</span></div>
+              <div class="delete-buttom"><span class="material-symbols-outlined">delete_forever</span></div>
+            </div>
+          </div>
+          <div class="user-card-content">
+            <div class="user-card-property">
+              <p style="color: #969696;">Email</p>
+              <p>user@gmail.com</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Birthdate</p>
+              <p>01/01/1990</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Age</p>
+              <p>30 years</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Nationality</p>
+              <p>Argentina</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Studies</p>
+              <p>Software Developer</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Current residence</p>
+              <p>Buenos Aires, Argentina</p>
+            </div>
+          </div>
+        </div> 
+        <div class="user-card">
+          <div class="user-card-header">
+            <div class="user-card-header-interno">
+              <div class="foto_perfil">
+                <img  src="./assets/FotoPerfil04.jpg">
+              </div>
+              <div>
+                <h5>Name and surname of users</h5>
+                <p>current job position</p>
+              </div>
+            </div>
+            <div class="card-edit-button">
+              <div class="edit-buttom"><span class="material-symbols-outlined">edit</span></div>
+              <div class="delete-buttom"><span class="material-symbols-outlined">delete_forever</span></div>
+            </div>
+          </div>
+          <div class="user-card-content">
+            <div class="user-card-property">
+              <p style="color: #969696;">Email</p>
+              <p>user@gmail.com</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Birthdate</p>
+              <p>01/01/1990</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Age</p>
+              <p>30 years</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Nationality</p>
+              <p>Argentina</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Studies</p>
+              <p>Software Developer</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Current residence</p>
+              <p>Buenos Aires, Argentina</p>
+            </div>
+          </div>
+        </div> 
+        <div class="user-card">
+          <div class="user-card-header">
+            <div class="user-card-header-interno">
+              <div class="foto_perfil">
+                <img  src="./assets/FotoPerfil05.jpg">
+              </div>
+              <div>
+                <h5>Name and surname of users</h5>
+                <p>current job position</p>
+              </div>
+            </div>
+            <div class="card-edit-button">
+              <div class="edit-buttom"><span class="material-symbols-outlined">edit</span></div>
+              <div class="delete-buttom"><span class="material-symbols-outlined">delete_forever</span></div>
+            </div>
+          </div>
+          <div class="user-card-content">
+            <div class="user-card-property">
+              <p style="color: #969696;">Email</p>
+              <p>user@gmail.com</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Birthdate</p>
+              <p>01/01/1990</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Age</p>
+              <p>30 years</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Nationality</p>
+              <p>Argentina</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Studies</p>
+              <p>Software Developer</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Current residence</p>
+              <p>Buenos Aires, Argentina</p>
+            </div>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-card-header">
+            <div class="user-card-header-interno">
+              <div class="foto_perfil">
+                <img  src="./assets/FotoPerfil06.jpg">
+              </div>
+              <div>
+                <h5>Name and surname of users</h5>
+                <p>current job position</p>
+              </div>
+            </div>
+            <div class="card-edit-button">
+              <div class="edit-buttom"><span class="material-symbols-outlined">edit</span></div>
+              <div class="delete-buttom"><span class="material-symbols-outlined">delete_forever</span></div>
+            </div>
+          </div>
+          <div class="user-card-content">
+            <div class="user-card-property">
+              <p style="color: #969696;">Email</p>
+              <p>user@gmail.com</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Birthdate</p>
+              <p>01/01/1990</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Age</p>
+              <p>30 years</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Nationality</p>
+              <p>Argentina</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Studies</p>
+              <p>Software Developer</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Current residence</p>
+              <p>Buenos Aires, Argentina</p>
+            </div>
+          </div>
+        </div> 
+        <div class="user-card">
+          <div class="user-card-header">
+            <div class="user-card-header-interno">
+              <div class="foto_perfil">
+                <img  src="./assets/FotoPerfil07.jpg">
+              </div>
+              <div>
+                <h5>Name and surname of users</h5>
+                <p>current job position</p>
+              </div>
+            </div>
+            <div class="card-edit-button">
+              <div class="edit-buttom"><span class="material-symbols-outlined">edit</span></div>
+              <div class="delete-buttom"><span class="material-symbols-outlined">delete_forever</span></div>
+            </div>
+          </div>
+          <div class="user-card-content">
+            <div class="user-card-property">
+              <p style="color: #969696;">Email</p>
+              <p>user@gmail.com</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Birthdate</p>
+              <p>01/01/1990</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Age</p>
+              <p>30 years</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Nationality</p>
+              <p>Argentina</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Studies</p>
+              <p>Software Developer</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Current residence</p>
+              <p>Buenos Aires, Argentina</p>
+            </div>
+          </div>
+        </div> 
+        <div class="user-card">
+          <div class="user-card-header">
+            <div class="user-card-header-interno">
+              <div class="foto_perfil">
+                <img  src="./assets/FotoPerfil05.jpg">
+              </div>
+              <div>
+                <h5>Name and surname of users</h5>
+                <p>current job position</p>
+              </div>
+            </div>
+            <div class="card-edit-button">
+              <div class="edit-buttom"><span class="material-symbols-outlined">edit</span></div>
+              <div class="delete-buttom"><span class="material-symbols-outlined">delete_forever</span></div>
+            </div>
+          </div>
+          <div class="user-card-content">
+            <div class="user-card-property">
+              <p style="color: #969696;">Email</p>
+              <p>user@gmail.com</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Birthdate</p>
+              <p>01/01/1990</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Age</p>
+              <p>30 years</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Nationality</p>
+              <p>Argentina</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Studies</p>
+              <p>Software Developer</p>
+            </div>
+            <div class="user-card-property">
+              <p style="color: #969696;">Current residence</p>
+              <p>Buenos Aires, Argentina</p>
+            </div>
+          </div>
+        </div>
 
+      </div>                                                           
+    </div>
   </main>
   <Footer id="footer-container">
     
