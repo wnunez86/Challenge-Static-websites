@@ -330,7 +330,7 @@ input:focus, textarea:focus, select:focus {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>> RESPONSIVE < 480PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media (width <= 480px) {
+@media (max-width:600px) {
   body {
     grid-template-columns: 100vw;
     grid-template-rows: 10vh 85vh auto;
@@ -434,14 +434,14 @@ input:focus, textarea:focus, select:focus {
   /*>>>>>>>>>>>>>>>>>>>>>>>>>>> Form Styles <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
-form {
-  width: 300px; 
-  border-radius: 10px; 
-}
+  form {
+    width: 300px; 
+    border-radius: 10px; 
+  }
 
-form h2 {
-  padding: 10px; 
-}
+  form h2 {
+    padding: 10px; 
+  }
 
 
 }
