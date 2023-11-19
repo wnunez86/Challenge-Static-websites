@@ -8,20 +8,20 @@ function showModal(id) {
   }
   
   // This document object is provided by the browser, and its main purpose is to help us interact with the DOM.
-  const newProjectBtn = document.getElementById("new-project-btn")
-  if (newProjectBtn) {
-    newProjectBtn.addEventListener("click", () => {showModal("new-project-modal")})
+  const newUserBtn = document.getElementById("new-user-btn")
+  if (newUserBtn) {
+    newUserBtn.addEventListener("click", () => {showModal("new-user-modal")})
   } else {
-    console.warn("New projects button was not found")
+    console.warn("New users button was not found")
   }
   
-  const projectForm = document.getElementById("new-project-form")
-  if (projectForm) {
-    projectForm.addEventListener("submit", (e) => {
+  const userForm = document.getElementById("new-user-form")
+  if (userForm) {
+    userForm.addEventListener("submit", (e) => {
       e.preventDefault()
-      const formData = new FormData(projectForm)
+      const formData = new FormData(userForm)
       console.log("Description:", formData.get("description"))
     })
   } else {
-      console.warn("The project form was not found. Check the ID!")
+      console.warn("The user form was not found. Check the ID!")
   }
